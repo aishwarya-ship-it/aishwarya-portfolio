@@ -22,31 +22,23 @@ function Navbar() {
 
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
         {links.map(([name, link]) => (
-          <a key={name} href={link}
-            onClick={() => setMenuOpen(false)}>
+          <a
+            key={name}
+            href={link}
+            onClick={() => setMenuOpen(false)}
+          >
             {name}
           </a>
         ))}
       </div>
 
-      <div className="nav-socials">
-        <a
-          href="https://github.com/aishwarya-ship-it"
-          target="_blank"
-          rel="noreferrer"
-          className="github-link"
-        >
-          GitHub ↗
-        </a>
-
-        <button
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
-      </div>
+      <button
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation"
+      >
+        {menuOpen ? <X /> : <Menu />}
+      </button>
     </nav>
   );
 }

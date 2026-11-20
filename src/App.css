@@ -104,12 +104,70 @@
   color: white;
 }
 
+
+/* MOBILE NAVBAR ALIGNMENT FIX */
+
+.nav-socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
 .menu-toggle {
   display: none;
-  border: none;
-  background: none;
-  color: var(--brown);
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
 }
+
+@media (max-width: 750px) {
+  .navbar {
+    min-height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .navbar .logo {
+    font-size: 23px;
+    flex-shrink: 0;
+  }
+
+  .nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+  }
+
+  .github-link {
+    padding: 8px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: static;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    top: 72px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 101;
+  }
+}
+
 
 /* HERO */
 
@@ -148,7 +206,11 @@
   font-family: 'Playfair Display', serif;
   font-size: clamp(40px, 5vw, 65px);
   line-height: 1.18;
-  color: var(--brown);
+  cn);
+  margin-bottom: 15px;
+}
+
+.contact-card > p {olor: var(--brown);
   margin-bottom: 25px;
 }
 
@@ -510,11 +572,7 @@
 .contact-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 27px;
-  color: var(--brown);
-  margin-bottom: 15px;
-}
-
-.contact-card > p {
+  color: var(--brow
   color: var(--muted);
   line-height: 1.8;
   font-size: 14px;
