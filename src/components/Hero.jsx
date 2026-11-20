@@ -41,7 +41,11 @@ function Hero() {
             <ArrowUpRight size={18} />
           </a>
 
-          <a href="/resume.pdf" download className="btn-outline">
+          <a
+            href="/resume.pdf"
+            download="Aishwarya_Resume.pdf"
+            className="btn-outline"
+          >
             Download CV
             <Download size={17} />
           </a>
@@ -60,7 +64,7 @@ function Hero() {
         transition={{ duration: 0.8 }}
       >
         <div className="hero-image">
-          <img src={profile} alt="Aishwarya profile" />
+          <img src={profile} alt="Aishwarya" />
         </div>
       </motion.div>
     </section>
