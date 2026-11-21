@@ -202,14 +202,14 @@
   margin-right: 8px;
 }
 
-.hero h1 {
+ {
+  .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(40px, 5vw, 65px);
   line-height: 1.18;
-  cn);
+  color: var(--brown);
   margin-bottom: 15px;
 }
-
 .contact-card > p {olor: var(--brown);
   margin-bottom: 25px;
 }
