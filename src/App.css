@@ -214,9 +214,14 @@
   margin-bottom: 25px;
 }
 
-.hero h1 span {
-  color: var(--accent);
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1.18;
+  color: var(--brown);
+  margin-bottom: 15px;
 }
+
 
 /* ROUND PROFILE IMAGE */
 
